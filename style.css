@@ -2,7 +2,7 @@
 @import url(./fontawesome-free-6.6.0-web/css/all.css);
 .animation{
     position: absolute;
-    top: 120%;
+    top: 100%;
     left: 0;
     width: 10%;
     height: 4px;
@@ -11,27 +11,29 @@
 }
 .bar:hover .animation{
     animation-name: effect;
-    animation-duration: 1s;
+    animation-duration: 500ms;
     animation-fill-mode: forwards;
     z-index: 2;
 }
 .bar:hover .menu1{
-    display: inline;
+    display: flex;
     position: absolute;
     top: 100%;
     right: 0;
     width: 15vw;
     height: 70vh;
-    background-color: blue;
+    box-shadow: 8px 8px 16px  gray;
+    overflow: auto;
 }
 .bar:hover .menu2{
-    display: inline;
+    display: flex;
     position: absolute;
     top: 100%;
     right: 15vw;
     width: 60vw;
     height: 70vh;
-    background-color: red;
+    box-shadow: -8px 8px 16px  gray;
+    overflow: auto;
 }
 @keyframes effect{
     100%{
