@@ -12,6 +12,25 @@
 .bar:hover .animation{
     animation-name: effect;
     animation-duration: 1s;
+    z-index: 2;
+}
+.bar:hover .menu1{
+    display: inline;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 15vw;
+    height: 70vh;
+    background-color: blue;
+}
+.bar:hover .menu2{
+    display: inline;
+    position: absolute;
+    top: 100%;
+    right: 15vw;
+    width: 60vw;
+    height: 70vh;
+    background-color: red;
 }
 @keyframes effect{
     100%{
