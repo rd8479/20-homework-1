@@ -12,6 +12,7 @@
 .bar:hover .animation{
     animation-name: effect;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
     z-index: 2;
 }
 .bar:hover .menu1{
