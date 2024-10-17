@@ -1,2 +1,21 @@
 @import url(./output.css);
 @import url(./fontawesome-free-6.6.0-web/css/all.css);
+.animation{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 10%;
+    height: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.bar:hover .animation{
+    animation-name: effect;
+    animation-duration: 1s;
+}
+@keyframes effect{
+    100%{
+        background-color: orangered;
+        width: 100%;
+    }
+}
