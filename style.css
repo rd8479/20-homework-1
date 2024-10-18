@@ -17,13 +17,15 @@
 }
 .bar:hover .menu1{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     position: absolute;
     top: 100%;
     right: 0;
     width: 15vw;
     height: 70vh;
     box-shadow: 8px 8px 16px  gray;
-    overflow: auto;
+    border-left:4px solid black ;
 }
 .bar:hover .menu2{
     display: flex;
@@ -33,7 +35,8 @@
     width: 60vw;
     height: 70vh;
     box-shadow: -8px 8px 16px  gray;
-    overflow: auto;
+    padding-right: 20px;
+    overflow-y: auto;
 }
 @keyframes effect{
     100%{
