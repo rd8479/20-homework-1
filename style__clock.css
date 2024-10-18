@@ -24,7 +24,11 @@
     background-color: transparent;
     bottom: 10%;
     left: 50%;
-    transform: translate(-50%) rotate(30deg);
+    transform: translate(-50%);
+    animation-name: rotate-360;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .min{
     width: 10px;
@@ -33,7 +37,11 @@
     position: absolute;
     bottom: 20%;
     left: 50%;
-    transform: translate(-50%) rotate(10deg);
+    transform: translate(-50%);
+    animation-name: rotate-360;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .h{
     width: 10px;
@@ -42,7 +50,11 @@
     position: absolute;
     bottom: 30%;
     left: 50%;
-    transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%);
+    animation-name: rotate-360;
+    animation-duration: 43200s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .radus{
     background-color: black;
@@ -54,4 +66,21 @@
     border-radius: 50%;
     z-index: 4;
     transform: translate(-50%, -50%);
+}
+@keyframes rotate-360{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
