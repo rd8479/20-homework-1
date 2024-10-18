@@ -18,19 +18,40 @@
 }
 .s{
     width: 10px;
-    height: 40%;
-    background-color: red;
+    height: 80%;
+    background:linear-gradient(to top,transparent 50%,red 50%);
     position: absolute;
-    bottom: 50%;
+    background-color: transparent;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%) rotate(30deg);
 }
 .min{
     width: 10px;
-    height: 30%;
-    background-color: rgb(85, 18, 18);
+    height: 60%;
+    background:linear-gradient(to top,transparent 50%,rgb(85, 18, 18) 50%);
     position: absolute;
-    bottom: 50%;
+    bottom: 20%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%) rotate(10deg);
+}
+.h{
+    width: 10px;
+    height: 40%;
+    background:linear-gradient(to top,transparent 50%,rgb(31, 78, 12) 50%);
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%) rotate(90deg);
+}
+.radus{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
 }
