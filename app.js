@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('.a1').on('mouseenter',function(){
+        $('.ul1:first-child').addClass('active');
+    });
+    $('.a2').on('mouseenter',function(){
+        $('.ul1:nth-child(2)').addClass('active');
+    });
+    $(".a1").mouseout(function(){
+        $('.ul1:first-child').removeClass('active');
+    });
+    $(".a2").mouseout(function(){
+        $('.ul1:nth-child(2)').removeClass('active');
+    });
+});
